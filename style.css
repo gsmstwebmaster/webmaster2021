@@ -74,6 +74,23 @@ text-align: center;
   color: black;
 }
 
+/*Headers */ 
+
+.titlebox {
+	background-color: #004389;
+	color: #B4D2E7;
+	font-size: 30px;
+}
+
+/* SLIDESHOW FORMATTING */
+
+.row { 
+width: 100%; 
+display: table-row-group;
+justify-content: space-evenly;
+background: black;
+}
+
 /* Animation */
 
 @keyframes fadeInUp {
