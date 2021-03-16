@@ -62,13 +62,6 @@ text-align: center;
   color: #000;
 }
 
-.navbar-collapse {
-  display: flex;
-  width: 50%;
-  height: 100%;   
-  justify-content: space-around;
-  align-items: center;
-}
 
 .carousel{
   color: black;
