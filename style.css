@@ -1,34 +1,3 @@
- body {
-    background: #e0e0eb;
-  }
-
-  h1{
-    font-family: Lucida Console, Monospace;
-    text-align: center;
-  }
-
-  h1.italic {
-    font-style: italic;
-    }
-
-  h2{
-    font-family: Georgia, serif;
-  }
-
-  h3{
-    color: white;
-  }
-
-  p{
-    font-family: Verdana, Sans-serif;
-    color: black;
-  } 
-
-  p.bold{
-    color: black;
-    text-align: center;
-  }
-
 
 // NAVIGATION BAR FORMATTING 
 
@@ -60,11 +29,6 @@ text-align: center;
 
 .nav-link:hover {
   color: #000;
-}
-
-
-.carousel{
-  color: black;
 }
 
 /*Headers */ 
