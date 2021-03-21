@@ -146,3 +146,31 @@ background: black;
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
+
+h1 {
+		
+    font-family: 'Open Sans', serif;
+    font-weight: bold; 
+    font-size: 50px; 
+}
+
+h2 { 
+
+font-family: 'Open Sans', serif; 
+font-size: 30px;	
+
+}
+
+h3 { 
+   font-family: 'Open Sans', serif;
+   font-weight: italic;
+   font-size: 30px; 
+}
+
+
+p { 
+
+font-family: 'Lato', serif;
+font-size: 20px; 
+
+}
