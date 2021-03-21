@@ -14,7 +14,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!--google fonts-->
       <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:600">
+          href="https://fonts.googleapis.com/css?family=Open+Sans|Lato">
   </head>
  
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -42,10 +42,10 @@
     
 <body>
 <!-- Image + Title of Page --> 
- <img class= "img-responsive" src="images/designbrief2.jpg" alt= "medical picture" width=100% height = 90%>
+ <img class= "img-responsive" src="images/designbrief2_CROPPED.jpg" alt= "medical picture" width=100% height = 100%>
  
   <div class = "container-fluid text-center titlebox">
-	 <h1> <b>Caduceus Telecoms </b> </h1>
+	 <h1 class="fancytitle">CADUCEUS TELECOMS</h1>
 	</div>
 
 
@@ -55,7 +55,7 @@
             <a class="nav-link active" data-toggle="tab" href="#home">Appointments</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#menu1">Covid-19</a>
+          <a class="nav-link" data-toggle="tab" href="#menu1">COVID-19</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#menu2">Services</a>
@@ -71,37 +71,53 @@
 <!-- TAB 1: APPOINTMENTS -->
 <div class="tab-pane container active" id="home">
     <div class="animated fadeInRight">  
-        <p class="outlined" style="text-align:center; font-family: Work Sans; font-size: 60px">
+        <p class="outlined" style="text-align:center; font-family: Open Sans; font-size: 60px">
           Appointments
         </p>
     </div>
-    <img src="images/pexels-appointment.jpeg" class="center" width=50% height=50%>   
-      <p>
-        Book an online appointment today! We understand it can be difficult to visit the doctor’s office in-person when you are sick. Our main service is booking online appointments with our doctors and specialists so you can get the rest you need and still be diagnosed and receive medical attention all from the comfort of your home. After filling out an online form for your appointment, fill out the patient checklist to ensure that you are ready for your medical consultation. </p>
+    <img src="images/pexels-appointment.jpeg" class="center" width=50% height=50%>  
+    <p><b><i>Book an online appointment today!</i></b> We understand it can be difficult to visit the doctor’s office in-person when you are sick. Our main service is booking online appointments with our doctors and specialists so you can get the rest you need and still be diagnosed and receive medical attention all from the comfort of your home. After filling out an online form for your appointment, fill out the patient checklist to ensure that you are ready for your medical consultation. </p>
    
         
-<div class="container form">
-   <h3>Sign Up Here!</h3>
-    <form action="/action_page.php">
+<div class="container">
+    <h3>Quick Appointment Form</h3>
+    <form action="action_page.php" method="get">
+        
       <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="name" class="form-control" placeholder="Enter full name" id="email">
+      </div>
+        
+    <div class="form-group">
         <label for="email">Email address:</label>
         <input type="email" class="form-control" placeholder="Enter email" id="email">
       </div>
         
       <div class="form-group">
         <label for="pwd">Phone Number:</label>
-        <input type="password" class="form-control" placeholder="Enter phone number" id="pwd">
+        <input type="phonenumber" class="form-control" placeholder="Enter phone number" id="pwd">
       </div>
-      <div class="form-group form-check">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox"> Remember me
-        </label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+
+    <div class="form-group">
+        <label for="pwd">Brief Description of Symptoms:</label>
+        <textarea class="form-control" rows="4" placeholder="Enter symptoms"></textarea>
+    </div>
+
+        
+    <div class="form-group">
+        <label for="dateofappt">Date Of Appointment:</label>
+        <input type="date" name="dateofappt" id="dateofappt">
+    </div>
+
+        
+      <button class="btn btn-primary" onclick="appointmentReceived()">Make Appointment</button>
+    <p id="demo"></p>
     </form>
     <br>
 </div>
+    
 <br>
+    
 <div class = "container form" id = "checklist">
     <h3> Patient Checklist  </h3>
     <p id="instructions">
@@ -112,7 +128,7 @@
       <li class="action-li">Test your audio and video feed to make sure it is working properly. You can use this <a href= "https://www.aauw.org/membership/"> link </a> to test using our webcall provider. </li>
       <li class="action-li"> Gather health records and medications you may need to show to the doctor </li>
         <li class="action-li"> Make a list of your concerns and questions to ask your doctor </li>
-    </ul>
+    </ul>    
 </div>
         
      </div>
@@ -121,8 +137,8 @@
  <div class="tab-pane container fade" id="menu1">
       <div class="container">
      <div class="animated fadeInRight">
-            <p class="outlined" style="text-align:center; font-family: Work Sans; font-size: 60px">
-              Covid-19
+            <p class="outlined" style="text-align:center; font-family: Open Sans; font-size: 60px">
+              COVID-19
             </p>
           </div>
     </div>
@@ -172,7 +188,7 @@
       </div>
 
        <div class="container">
-        <h1>Company Info</h1>
+        <h1 class="center">Company Info</h1>
         <p style="border-style:solid";border-width: 5px;margin: 30px>
           Caduceus Telecoms offers a variety of services and products ranging from Rapid Covid Tests to Live Chats with a specialist, all designed for the convenience of our customers. Our company aims to aid all our patients with exceptional quality and care - for a reasonable and affordable price. At Caduceus, we prioritize your needs, as the customer, and value your time on call by communicating efficiently and in a professional manner. Our headquarters is located in Lawrenceville, Georgia but we provide services to people all over the United States. 
         </p>
@@ -187,35 +203,38 @@
 
 <style>
   p{
-     font-family: 'Roboto', Sans-serif;
+     font-family: 'Lato', Sans-serif;
      font-size: 18px;
       padding-top: 25px;
       padding-right: 15px;
       padding-bottom: 25px;
       padding-left: 40px;
    } p.animation {
-     font-family: 'Work Sans', sans-serif;
+     font-family: 'Open Sans', sans-serif;
      font-size: 70px;
      color: MidnightBlue;
    }
 
   h1{
-    font-family: 'Work Sans', Monospace;
+    font-family: 'Open Sans', serif;
     font-size: 50px;
+    font-weight: bold;
   }
+    
+.fancytitle {
+    font-family: 'Open Sans', serif;
+    font-size: 64px;
+    font-weight: 700;
+    color:aliceblue;
+}
 
   h2{
-    font-family: 'Work Sans', Serif;
+    font-family: 'Open Sans', Serif;
     font-size: 40px;
   }
 
   h3{
-    font-family: 'Work Sans', Monospace;
-  }
-
-  h4{
-    font-family: Verdana, Sans-serif;
-    color: black;
+    font-family: 'Open Sans', Monospace;
   }
 
 .center {
@@ -231,14 +250,48 @@
 }
 
 .action-li {
-    font-family: 'Roboto';
+    font-family: 'Lato';
     font-size: 16px;
 }
     
-    body {
-        padding-bottom:40px;
-        border: 1px solid transparent;
-    }
+body {
+    padding-bottom:40px;
+    border: 1px solid transparent;
+    
+}
+
+
+
+//CALENDAR STUFF
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 100;
+}
+
+/* custom styles */
+label {
+  display: block;
+}
+input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+  width: 190px;
+}
+    
 </style>
+    
+<script>
+function appointmentReceived() {
+    document.getElementById("demo").innerHTML = "Appointment Received"
+}
+</script>
 
 </html>
