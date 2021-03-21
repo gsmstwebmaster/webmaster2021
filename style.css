@@ -100,22 +100,22 @@ background: black;
 /* Outline */
 
 .outlined {
-  text-shadow: 5px 5px 5px rgb(0, 0, 0);
-  color: white;
+  text-shadow: 5px 5px 5px #B4D2E7;
+  color: black;
   font-family: Georgia, Serif;
 }
 
 /* Nav bar for design page */
 
 .nav-tabs {
-  background-color: #5193bf;
+  background-color: #b4d2e7;
 }
 
 .nav-link{
-  color: rgb(255, 255, 255);
+  color: #002852;
   height: 60px;
   font-size: 24px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Fade right */
