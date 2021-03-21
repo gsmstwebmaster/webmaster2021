@@ -1,4 +1,3 @@
-
 // NAVIGATION BAR FORMATTING 
 
 .flexbox { 
@@ -109,15 +108,14 @@ background: black;
 /* Nav bar for design page */
 
 .nav-tabs {
-  background-color: #0e2433;
+  background-color: #5193bf;
 }
 
 .nav-link{
   color: rgb(255, 255, 255);
-  width: 100px;
-  height: 50px;
-  font-size: 18px;
-  font-family: Lucida Console, Monospace;
+  height: 60px;
+  font-size: 24px;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* Fade right */
