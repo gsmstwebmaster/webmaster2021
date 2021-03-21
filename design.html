@@ -81,7 +81,7 @@
         
 <div class="container">
     <h3>Quick Appointment Form</h3>
-    <form action="action_page.php" method="get">
+    <form>
         
       <div class="form-group">
         <label for="name">Name:</label>
@@ -111,7 +111,7 @@
 
         
       <button class="btn btn-primary" onclick="appointmentReceived()">Make Appointment</button>
-    <p id="demo"></p>
+    
     </form>
     <br>
 </div>
@@ -182,11 +182,18 @@
 <!-- TAB 4: ABOUT US -->
     <div class="tab-pane container fade" id="menu3">
       <div class="container-fluid">
-        <h1 class="center">Background Info</h1>
-        <p style="border-style:solid";border-width: 5px;margin: 30px;>
-          Our founder, William Yoon, graduated from GSMST’s prestigious medical program and was inspired to create this company due to a personal experience with his best friend. After his close friend Eugene, the other founder, was bedridden and unable to move due to a horrible infection, William knew he had to take action so that Eugene and others like him could get adequate medical care and attention. After Eugene’s recovery, William and Eugene founded Caducous Telecoms in 2016 to make medical health care more accessible to everyone. Currently, Caduceus Telecoms is serving patients internationally and becoming increasingly important in today’s world, especially during the Pandemic.
-
-        </p>
+    <!--background info-->
+        <h1 class="center" style="text-align:center">Background Info</h1>
+        <div class="row">
+          <div class="col-sm-7">
+            <p style="border-style:solid";border-width: 5px;>
+             Our founder, William Yoon, graduated from GSMST’s prestigious medical program and was inspired to create this company due to a personal experience with his best friend. After his close friend Eugene, the other founder, was bedridden and unable to move due to a horrible infection, William knew he had to take action so that Eugene and others like him could get adequate medical care and attention. After Eugene’s recovery, William and Eugene founded Caducous Telecoms in 2016 to make medical health care more accessible to everyone. Currently, Caduceus Telecoms is serving patients internationally and becoming increasingly important in today’s world, especially during the Pandemic.</p>
+            </div>
+          <div class="col-sm-5">
+              <img src="images/pexels-twofriends.jpg" width=100% height=100% class="center">
+            </div>
+        </div>
+    <!--mission statement, whatever that means-->
           <h2 class="text-center" style="border-style:solid";border-width: 5px;margin: 30px>
           Mission Statement:
           </h2>
@@ -194,7 +201,7 @@
       </div>
 
        <div class="container">
-        <h1 class="center">Company Info</h1>
+        <h1 class="center" style="text-align:center">Company Info</h1>
         <p style="border-style:solid";border-width: 5px;margin: 30px>
           Caduceus Telecoms offers a variety of services and products ranging from Rapid Covid Tests to Live Chats with a specialist, all designed for the convenience of our customers. Our company aims to aid all our patients with exceptional quality and care - for a reasonable and affordable price. At Caduceus, we prioritize your needs, as the customer, and value your time on call by communicating efficiently and in a professional manner. Our headquarters is located in Lawrenceville, Georgia but we provide services to people all over the United States. 
         </p>
