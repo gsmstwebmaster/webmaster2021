@@ -124,12 +124,23 @@
     <p id="instructions">
         A few reminders and tips before your meeting:</p>
     <ul id="my-list">
-      <li class="action-li">Charge your laptop or device before the call </li>
-      <li class="action-li">Before the call make sure you can access the internet </li>
-      <li class="action-li">Test your audio and video feed to make sure it is working properly. You can use this <a href= "https://www.aauw.org/membership/"> link </a> to test using our webcall provider. </li>
-      <li class="action-li"> Gather health records and medications you may need to show to the doctor </li>
-        <li class="action-li"> Make a list of your concerns and questions to ask your doctor </li>
-    </ul>    
+      <ol id="Checklist here">
+  <li class="checked">Visit our website</li>        
+  <li>Charge your laptop or device before the call</li>
+  <li>Test your audio and video feed to make sure it is working properly. You can use this <a href= "https://www.aauw.org/membership/"> link </a> to test using our webcall provider. </li>  
+  <li>Gather health records and medications you may need to show to the doctor</li>
+  <li>Make a list of your concerns and questions to ask your doctor</li>
+  <li>Before the call make sure you can access the internet</li>
+</ol>
+<script>
+// checker function
+var checklist = document.querySelector('ol');
+checklist.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+</script>
 </div>
         
      </div>
@@ -320,9 +331,66 @@
 body {
     padding-bottom:40px;
     border: 1px solid transparent;
+   margin: 0;
+   min-width: 250px; 
     
 }
+{box-sizing: border-box;}
+ol li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
 
+}ol li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ol li:hover {
+  background: #ddd;
+}
+
+ol li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+/*making a "check" symbol*/
+ol li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  float: left;
+  font-size: 16px;
+}
+/*Clicking items*/
+.click {
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.click:hover {
+  background-color: #bbb;
+}
 
 
 //CALENDAR STUFF
