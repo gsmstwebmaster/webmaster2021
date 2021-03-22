@@ -1,204 +1,277 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/6/6f/Seal_of_GSMST.png" type="image/gif" sizes="17x25">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>GSMST CTE</title>
-    <!--bootstraps stylesheet-->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<html lang="en">
+
+<head>
+	<title>CTE</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+		}
+
+		.header {
+			padding: 80px;
+			text-align: center;
+			/*background: #33ccff;*/
+			background-image: url("https://pbs.twimg.com/media/EI4Q3dnUcAABT2O.jpg");
+			background: url('https://i.imgur.com/sohWhy9.jpg')
+ color: white;
+			style="color:blue;"
+		}
+
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+
+		.header h1 {
+			font-size: 40px;
+		}
+
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			position: sticky;
+			position: -webkit-sticky;
+			top: 0;
+		}
+
+		.navbar a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 20px;
+			text-decoration: none;
+		}
+
+		.navbar a.right {
+			float: right;
+		}
+
+		.navbar a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		.navbar a.active {
+			background-color: #666;
+			color: white;
+		}
+
+		.row {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+		}
+
+		.side {
+			-ms-flex: 30%;
+			flex: 30%;
+			background-color: #f1f1f1;
+			padding: 20px;
+		}
+
+		.column {
+			float: left;
+			width: 33.33%;
+			padding: 10px;
+			height: 300px;
+	
+		}
+
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.main {
+			-ms-flex: 70%;
+			flex: 70%;
+			background-color: white;
+			padding: 20px;
+		}
+
+		.img {
+			background-color: #aaa;
+			width: 100%;
+			padding: 20px;
+		}
+
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background: #ddd;
+		}
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+  
     
-  </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index.html"><img   src="https://upload.wikimedia.org/wikipedia/en/6/6f/Seal_of_GSMST.png" width="25" height="30"
-        " alt=""></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">CTE</a></li>
-        <li><a href="ourchapter.html">Our Chapter</a></li>
-        <li><a href="design.html">Design Brief & Solution</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>'
 
-<div id="CTE" class="container-fluid" style="background-color:LightBlue">
-  <br><br>
-  <h1>Career & Technical Education</h1>
+		/* The @media can be replaced by bootstrap-it's just simple HTML RWS */
+		@media screen and (max-width: 700px) {
+			.row {
+				flex-direction: column;
+			}
+		}
+
+
+		@media screen and (max-width: 400px) {
+			.navbar a {
+				float: none;
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="header">
+		<h1 style="color:#00ccff;">Career & Technical Education</h1>
+		<p style="color:#000066;">Our school is well known and proud of its technology programs. Technology plays an integral role
+			in supporting curriculum and instruction at GSMST. In our 1:1 student laptop environment, students have instant access
+			to eClass (Gwinnett County’s online learning platform), the Online Research Library, and industry standard software from
+			Microsoft, Adobe, Autodesk, and more.</p>
+	</div>
+
+	<div class="navbar">
+		<a href="#" class="middle">. </a>
+	</div>
+
+	<div class="row">
+		<div class="side">
+			<h2>COVID-19 Adjustments</h2>
+			<div class="img" style="height:210px;" "width:310px"><img src="https://ci6.googleusercontent.com/proxy/N2sOTXmGF8uZpQarekFf_UkkdVXAskESV50wQ8pqMNnZPJa_EmdCKws_v-erCfbc5C6ufKsbkx3H1d_SDLqTkdZ8iAX-eeGY5uz-69GIpuNm7GtHuOTC0QKrfWbDfsQBiV1zyRBsE4aw=s0-d-e1-ft#https://files.constantcontact.com/38c2d088001/b85fb7df-06ae-4e8b-ba99-483b9ed80d16.jpg" alt="Fascopy" width="300" height="170"></div>
+    <p>GSMST staff and teacher have provided many resources for students during this pandemic. Students have the option of coming in person with social distancing and mask-wearing or to be able to work digitally. Zoom, Google Classroom, and MyEclass has helped students communicate with their teachers and learn in this difficult environment. Teachers provide guidance to students who are having difficulty learning online.</p>
+    <h3>Filler</h3>
+    <p>More Content.</p>
+
+  </div>
+  <div class="main">
+    <h2>Courses</h2>
+    <p></p>
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <h2>Physeng</h2>
+    <p>All freshmen students at GSMST are required to complete the following courses: Gifted Physics, Engineering Concepts,and Foundation of Engineering/Technology.Students are given first-hand experience with the engineering design process and hands-on construction alongside state-of-the-art workshops for each classroom with the use of CAD software.</p>
+
+  </div>
+  <div class="column middle" style="background-color:#bbb;">
+    <h2>Engineer Applications</h2>
+    <p>Engineering Applications is a continuation of the engineering pathway(started in freshman year)to sophomore year. Students learn engineering principles such as Truss Analysis,Students design, construct and test their own CO2 car, Truss Bridge and Model Rocket. Also, students apply engineering management concepts to help aid their building process.</p>
+  </div>
+  <div class="column right" style="background-color:#ccc;">
+    <h2>Science & Engineering Fair</h2>
+    <p>All sophomore students at GSMST are required to complete a full project for the Intel Science and Engineering Fair as part of the advanced STEM curriculum. In the traditional Science Fair, students examine a particular topic, perform experiments and draw conclusions based on their data. </p>
+  </div>
 </div>
-
-<br>
-
-<div class = "container-fluid">
-  <p>Our school is well known and proud of its technology programs. Technology plays an integral role in supporting curriculum and instruction at GSMST. In our 1:1 student laptop environment, students have instant access to eClass (Gwinnett County’s online learning platform), the Online Research Library, and industry standard software from Microsoft, Adobe, Autodesk, and more.</p>
-</div> 
-<br>
-
-<div class = "container-fluid" class="media">
-  <div class="media-left">
-    <img src="https://i.imgur.com/oOMP8cd.png"  width="250" height="250" class="media-object" >
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+   <img src="https://i.imgur.com/oOMP8cd.png"  width="250" height="250" class="media-object" >
   </div>
-  <div class="media-body">
-    <h4 class="media-heading"><b>PhysEng</b></h4>
-    <p>All freshmen students at GSMST are required to complete the following courses: Gifted Physics, Engineering Concepts,and Foundation of Engineering/Technology. These courses are all taken together in a block period (two consecutive periods). Students are given first-hand experience with the engineering design process and hands-on construction alongside state-of-the-art workshops for each classroom. Students also learn how to use professional CAD software such as Autodesk Inventor and AutoCAD.</p>
-  </div>
-</div>
-
-<br>
-
-<div class = "container-fluid" class="media">
-  <div class="media-left">
+  <div class="column middle" style="background-color:#bbb;">
     <img src="https://i.imgur.com/70vMpdK.jpg"  width="250" height="275" class="media-object" >
   </div>
-  <div class="media-body">
-    <h4 class="media-heading"><b>Engineering Applications</b></h4>
-    <p>Engineering Applications is a continuation of the engineering pathway (started in freshman year) to sophomore year. Students learn engineering principles such as Truss Analysis, Mechanics of Materials and CO2 Car Calculations which later help with the projects done in the class itself. Students design, construct and test their own CO2 car, Truss Bridge and Model Rocket. In addition, students apply engineering management concepts to help aid their building process.</p>
-  </div>
-</div>
-
-<br>
-
-<div class = "container-fluid" class="media">
-  <div class="media-left">
+  <div class="column right" style="background-color:#ccc;">
     <img src="https://i.imgur.com/eXwVF3n.jpg"  width="250" height="250" class="media-object" >
   </div>
-  <div class="media-body">
-    <h4 class="media-heading"><b>Science & Engineering Fair</b></h4>
-    <p>All sophomore students at GSMST are required to complete a full project for the Intel Science and Engineering Fair as part of the advanced STEM curriculum. In the traditional Science Fair, students examine a particular topic, perform experiments and draw conclusions based on their data. Similarly, students in the Engineering Fair utilize the engineering design process through identifying a problem and designing a solution or device.</p>
-  </div>
 </div>
-<br>
-        
-<div class = "container-fluid" class="media">
-  <div class="media-left">
-    <img src="http://www.robotics.gsmstengineering.com/wp-content/uploads/2014/12/cab40c60942460f44133ef99d2ac535e.jpg"  width="250" height="250" class="media-object" >
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading"><b>Robotics Classes</b></h4>
-    <p>Our school offers several levels of robotics classes - from freshmen/beginning robotics to advanced. Mr. Coddington teaches all of these courses and guides students to advance their skills in the engineering and robotics realms.</p>
-  </div>
-</div>
-<br>
-        
 
-<div class = "container-fluid" class="media">
-  <div class="media-left">
-    <img src="https://i.imgur.com/sbZaFEl.jpg"  width="250" height="250" class="media-object" >
+    
+    <br>
+    <h2>Teachers</h2>
+    <h5></h5>
+      <div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <img src="https://www.gcpsk12.org/cms/lib/GA02204486/Centricity/Domain/6041/E201300863_crop.jpg" class="img-responsive center-block"  width="250" height="250" class="center" >
   </div>
-  <div class="media-body">
-    <h4 class="media-heading"><b>Junior Fellowship Experience/Senior Capstone Experience</b></h4>
-    <p>All junior and senior students at GSMST are required to participate in an internship, or fellowship, experience during both their junior and senior years. These fellowship experiences allow students to connect with a mentor who is a current practitioner in applied science, technology, mathematics, and/or engineering fields. The Junior Fellowships include on-site collaboration with the mentor at his/her office and/or lab, as well as virtual or remote contact.</p>
+  <div class="column" style="background-color:#bbb;">
+       <img src="https://www.gcpsk12.org/cms/lib/GA02204486/Centricity/Domain/6041/e200601583_crop.jpg" class="img-responsive center-block"  width="230" height="250" class="center" >
   </div>
+  <div class="column" style="background-color:#ccc;">
+       <img src="https://i.imgur.com/wRBfgQs.png"  width="240" height="250" class="media-object" >
 </div>
-<br>
 
-<br>
-<div id="CTE" class="container-fluid" style="background-color:LightBlue">
-  <h2><b>Teachers</b></h2>
-</div>
-<br>
-  
-<div class = "container-fluid">
+
     <div class="row">
-    <div class="col-sm-4">
-      <h4>Tommy Nguyen</h4>
-      <img src="https://www.gcpsk12.org/cms/lib/GA02204486/Centricity/Domain/6041/E201300863_crop.jpg" class="img-responsive center-block" width = "250" height = "250"> 
-      <br>
-      <p class = "teachers">Mr. Nguyen is our TSA advisor, Engineering Applications teacher, and AP Computer Science Principles teacher at GSMST.</p>
-    </div>
-
-    <div class="col-sm-4">
-      <h4>Jason Boyette</h4>
-      <img src="https://www.gcpsk12.org/cms/lib/GA02204486/Centricity/Domain/6041/e200601583_crop.jpg" class="img-responsive center-block" width = "230" height = "250"> 
-      <br>
-      <p class = "teachers">Mr. Boyette is the teacher sponsor for Digital Media Club, and he also teaches Intro to Digital Media and more!</p>
-    </div>
-
-    <div class="col-sm-4">
-      <h4>Laura Gray</h4>
-      <img src="https://i.imgur.com/wRBfgQs.png" width = "193" height = "229" class="img-responsive center-block"> 
-      <br>
-      <p class = "teachers">Mrs. Gray is also our AP Computer Science Applications and Precalculus teacher and Computer Science Club Advisor. She is also a strong advocate for women in STEM fields.</p>
-    </div>
+  <div class="column" style="background-color:#aaa;">
+    <h2>Mr. Nguyen</h2>
+    <p>Mr. Nguyen is our TSA advisor, Engineering Applications teacher, and AP Computer Science Principles teacher at GSMST.</p>
   </div>
-</div>  
+  <div class="column" style="background-color:#bbb;">
+    <h2>Jason Boyette</h2>
+    <p>Mr. Boyette is the teacher sponsor for Digital Media Club, and he also teaches Intro to Digital Media and more!</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Laura Gray</h2>
+    <p>Mrs. Gray is also our AP Computer Science Applications and Precalculus teacher and Computer Science Club Advisor. She is also a strong advocate for women in STEM fields.</p>
 
-<div id="CTE" class="container-fluid" style="background-color:LightBlue">
-  <h2><b>Extracurriculars</b></h2>
+
+  </div>
+  <h2>Extracurriculars</h2>
+      <div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>TSA</h2>
+    <p>TSA, or Technology Student Association, is a club where students gather in teams based on their interests and work collectively to fulfill the final challenge of their events, fostering lasting bonds along the way. </p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Robotics Club</h2>
+    <p>GSMST has multiple teams for two competitions: FTC (First Tech Challenge) and VEX Robotics teams. Students can gain first-hand experience in programming, mechanical design, and construction.</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Digital Media Club</h2>
+    <p>Students in this club work on their video production skills using software such as Adobe Premiere Pro and Adobe After Effects. In addition, students help produce the school’s morning announcements, videos of our school’s mandatory summer program (Summer STEM) for incoming freshmen, and International Night videos.</p>
+  </div>
+      <div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>TSA</h2>
+    <p>Lorem Ipsum Insert TSA Image Lorem Ipsum Insert TSA Image</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+       <img src="https://i.imgur.com/as1US8Z.png"  width="270" height="220" class="media-object" >
+  </div>
+  <div class="column" style="background-color:#ccc;">
+       <img src="https://i.imgur.com/HBhWjcN.png"  width="270" height="200" class="media-object" >
+
+  </div>
+  </div>
+  </div>
+    
+
+    
+
 </div>
-<br>
-
-
-<div class = "container-fluid">
-  <div class="media">
-  <div class="media-body">
-    <h4 class="media-heading"><b>Robotics Club</b></h4>
-    <p>GSMST has multiple teams for two competitions: FTC (First Tech Challenge) and VEX Robotics teams. Students can gain first-hand experience in programming, mechanical design, and construction.</</p>
-  </div>
-  <div class="media-right">
-   <img src="https://i.imgur.com/as1US8Z.png" alt="vex room" width="375" height="281">
-  </div>
+</div>
+</div>
   </div>
 </div>
-<br><br>
 
-<div class = "container-fluid">
-  <div class="media">
-  <div class="media-body">
-    <h4 class="media-heading"><b>Digital Media Club</b></h4>
-    <p>Students in this club work on their video production skills using software such as Adobe Premiere Pro and Adobe After Effects. In addition, students help produce the school’s morning announcements, videos of our school’s mandatory summer program (Summer STEM) for incoming freshmen, and International Night videos.</</p>
-  </div>
-  <div class="media-right">
-    <img src="https://i.imgur.com/HBhWjcN.png" alt="dmc" width = "341" height = "256">
-  </div>
-  </div>
+
+
+<div class="footer">
+  <h2>GSMST TSA</h2>
+<img src="http://gsmsttsa.weebly.com/uploads/6/9/3/2/6932929/8982189.jpg"  width="266" height="256" class="media-object" >
+
+<h5>2021 Gwinnett School of Mathematics, Science, and Technology</h1>
+
+  
 </div>
 
 </body>
-
-<style>
-h1{
-  font-family: Lucida Console, Monospace;
-}
-
-p{
-    color: black;
-  padding-top: 25px;
-  padding-right: 15px;
-  padding-bottom: 25px;
-  padding-left: 40px;
-
-
-
-  } p.teachers{
-     font-family: Lucida Console, Monospace;
-     text-align: center;
-  }
-
-h2{
-  text-align: center;
-  font-family: Lucida Console, Monospace;
-}
-
-h4{
-  font-family: Lucida Console, Monospace;
-  text-align: center;
-}
-</style>
-
 </html>
