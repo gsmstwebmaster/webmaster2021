@@ -110,28 +110,30 @@
         <input type="date" name="dateofappt" id="dateofappt">
     </div>
 
-        
-      <button class="btn btn-primary" onclick="appointmentReceived()">Make Appointment</button>
-    
+        <button class="btn btn-primary" onclick="appointmentReceived()">Make Appointment</button>
+     </div> 
+     </div> 
     </form>
     <br>
 </div>
-    
-<br>
+	<br>
     
 <div class = "container form" id = "checklist">
     <h3> Patient Checklist  </h3>
     <p id="instructions">
         A few reminders and tips before your meeting:</p>
+  <div class = "container-check"> 
     <ul id="my-list">
       <ol id="Checklist here">
   <li class="checked">Visit our website</li>        
   <li>Charge your laptop or device before the call</li>
-  <li>Test your audio and video feed to make sure it is working properly. You can use this <a href= "https://www.aauw.org/membership/"> link </a> to test using our webcall provider. </li>  
+  <li>Test your audio and video feed to make sure it is working properly. You can use this <a href = "https://zoom.us/"> link </a> to test using our webcall provider. </li>  
   <li>Gather health records and medications you may need to show to the doctor</li>
   <li>Make a list of your concerns and questions to ask your doctor</li>
   <li>Before the call make sure you can access the internet</li>
 </ol>
+</div> 
+ 
 <script>
 // checker function
 var checklist = document.querySelector('ol');
@@ -321,7 +323,15 @@ checklist.addEventListener('click', function(ev) {
 .form {
     border-style: solid;
     border-color: rgb(128, 194, 239);
+    background-color:  #b4d2e7;
 }
+.container-check {
+  display: flex;
+  margin: 0px 20px 20px 20px;
+
+
+}
+
 
 .action-li {
     font-family: 'Lato';
@@ -341,12 +351,12 @@ ol li {
   position: relative;
   padding: 12px 8px 12px 40px;
   list-style-type: none;
-  background: #eee;
+  background: #f8f8f8;
   font-size: 18px;
   transition: 0.2s;
 
 }ol li:nth-child(odd) {
-  background: #f9f9f9;
+  background: #eee;
 }
 
 ol li:hover {
@@ -354,7 +364,7 @@ ol li:hover {
 }
 
 ol li.checked {
-  background: #888;
+  background: #004389;
   color: #fff;
   text-decoration: line-through;
 }
@@ -392,6 +402,12 @@ input {
   background-color: #bbb;
 }
 
+.containerform { 
+	 background: #004389; 
+	
+	}
+
+ 
 
 //CALENDAR STUFF
 [type="date"] {
@@ -417,6 +433,7 @@ input {
   width: 190px;
 }
 //Navigation bar stuff 
+	
 .flexbox { 
  display:inline-flex;
  justify-content: space-evenly;
@@ -432,3 +449,5 @@ input {
     
 </style>
 </html>
+
+  
