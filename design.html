@@ -103,14 +103,18 @@
         <label for="pwd">Brief Description of Symptoms:</label>
         <textarea class="form-control" rows="4" placeholder="Enter symptoms"></textarea>
     </div>
-
+     
         
     <div class="form-group">
         <label for="dateofappt">Date Of Appointment:</label>
         <input type="date" name="dateofappt" id="dateofappt">
     </div>
-
-        <button class="btn btn-primary" onclick="appointmentReceived()">Make Appointment</button>
+      <br>
+      <br>
+     <div class = "row"> 
+       <div class = "col-12 col-lg-12"> 
+         
+      <button class="btn btn-primary" onclick="appointmentReceived()">Make Appointment</button>
      </div> 
      </div> 
     </form>
@@ -120,8 +124,10 @@
     
 <div class = "container form" id = "checklist">
     <h3> Patient Checklist  </h3>
+    <center> 
     <p id="instructions">
-        A few reminders and tips before your meeting:</p>
+        Make sure to fill out this checklist before your appointment! </p>
+      </center> 
   <div class = "container-check"> 
     <ul id="my-list">
       <ol id="Checklist here">
@@ -133,7 +139,6 @@
   <li>Before the call make sure you can access the internet</li>
 </ol>
 </div> 
-	</div> 
  
 <script>
 // checker function
@@ -147,7 +152,6 @@ checklist.addEventListener('click', function(ev) {
 </div>
         
      </div>
-
 <!-- TAB 2: COVID-19 -->
  <div class="tab-pane container fade" id="menu1">
       <div class="container">
